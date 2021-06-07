@@ -38,40 +38,25 @@ body {
   flex-wrap: wrap;
   width: 450px;
 }
-.tab {
+.space {
   width: 150px;
   height: 150px;
   
 }
 
-.space-1{
+#tab-1,#tab-3,#tab-4, #tab-6 {
   
   border-bottom: 5px solid #360726;
 }
-.space-2{
-  border-left: 5px solid #360726;
-  border-right: 5px solid #360726;
-  border-bottom: 5px solid #360726;
-}
-.space-3{
-    border-bottom: 5px solid #360726;
-}
 
-.space-4{  
-  border-bottom: 5px solid #360726;
-}
 
-.space-5{
+#tab-2, #tab-5{
   border-left: 5px solid #360726;
   border-right: 5px solid #360726;
   border-bottom: 5px solid #360726;
 }
 
-.space-6{  
-  border-bottom: 5px solid #360726;
-}
-
-.space-8{
+#tab-8 {
   border-left: 5px solid #360726;
   border-right: 5px solid #360726;
   }
