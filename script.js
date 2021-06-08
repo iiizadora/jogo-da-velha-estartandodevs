@@ -1,14 +1,34 @@
-const elementTab = document.querySelectorAll(".space");
-console.log(elementTab);
+const espacoJogo = document.querySelectorAll('.space');
 
-const play1 = document.createElement('img');
-play1.setAttribute('scr','./assets/piece-x.svg')
-play1.setAttribute("class", "play1");
+const jog1 = 'X'
+const jog2 = 'O'
 
-const play2 = document.createElement('img');
-play2.setAttribute('scr','./assets/piece-o.svg')
-play2.setAttribute("class", "play2");
+iniciarJogo();
 
-document.addEventListener("click",(event)=>{
-  console.log(event.target.id);
-});
+
+function iniciarJogo() {
+  let jogadorDaVez = true;
+  for (let espacoPreenchido of espacoJogo) {
+
+    espacoPreenchido.addEventListener("click", function () {
+      if (espacoPreenchido.innerHTML == 0  ) {
+
+        if (jogadorDaVez) {
+
+          const pieceX = document.querySelector('.jog1')
+          espacoPreenchido.appendChild(pieceX);
+
+                
+        } else if( !jogadorDaVez ) {
+          
+          const pieceO = document.querySelector('.jog2')
+          espacoPreenchido.appendChild(pieceO);
+          
+        }
+      }
+      });
+  }
+}
+
+
+
