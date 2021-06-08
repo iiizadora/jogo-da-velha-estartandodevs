@@ -31,7 +31,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
-
 }
 .game-board__container {
   display: flex;
@@ -41,16 +40,17 @@ body {
 .space {
   width: 150px;
   height: 150px;
-  
 }
 
-#tab-1,#tab-3,#tab-4, #tab-6 {
-  
+#tab-1,
+#tab-3,
+#tab-4,
+#tab-6 {
   border-bottom: 5px solid #360726;
 }
 
-
-#tab-2, #tab-5{
+#tab-2,
+#tab-5 {
   border-left: 5px solid #360726;
   border-right: 5px solid #360726;
   border-bottom: 5px solid #360726;
@@ -59,4 +59,16 @@ body {
 #tab-8 {
   border-left: 5px solid #360726;
   border-right: 5px solid #360726;
-  }
+}
+
+.imgX , .imgO{
+  display: none;
+}
+.jog1, .jog2 {
+  
+  
+  margin: 20px 20px;
+  width: 100px;
+  height: 100px;
+  
+}
